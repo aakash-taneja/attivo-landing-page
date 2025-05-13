@@ -36,7 +36,7 @@ const FaqSection = () => {
   const { ref, isInView } = useScrollAnimation();
 
   return (
-    <section id="faq" className="section" ref={ref}>
+    <section id="faq" className="section bg-background" ref={ref}>
       <div className="container">
         <motion.div 
           className="text-center mb-12"
@@ -44,7 +44,7 @@ const FaqSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
         </motion.div>
         
         <div className="max-w-3xl mx-auto">
@@ -56,11 +56,11 @@ const FaqSection = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
               >
-                <AccordionItem value={`item-${index}`}>
-                  <AccordionTrigger className="text-left text-lg font-semibold">
+                <AccordionItem value={`item-${index}`} className="border-gray-800">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-white">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
+                  <AccordionContent className="text-gray-300">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

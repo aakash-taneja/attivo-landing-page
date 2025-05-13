@@ -17,7 +17,7 @@ const InsightsSection = () => {
   };
 
   return (
-    <section id="insights" className="section bg-gray-50" ref={ref}>
+    <section id="insights" className="section bg-secondary" ref={ref}>
       <div className="container">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
           <div className="md:w-1/2">
@@ -31,7 +31,7 @@ const InsightsSection = () => {
             </motion.div>
             
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold mb-4"
+              className="text-3xl md:text-4xl font-bold mb-4 text-white"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -40,7 +40,7 @@ const InsightsSection = () => {
             </motion.h2>
             
             <motion.p 
-              className="text-gray-600 mb-6"
+              className="text-gray-300 mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -57,12 +57,12 @@ const InsightsSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="bg-primary/20 p-2 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="font-medium">Personalized daily tips</p>
+                <p className="font-medium text-white">Personalized daily tips</p>
               </motion.div>
               
               <motion.div 
@@ -72,12 +72,12 @@ const InsightsSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="bg-primary/20 p-2 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="font-medium">Health trend analysis</p>
+                <p className="font-medium text-white">Health trend analysis</p>
               </motion.div>
               
               <motion.div 
@@ -87,12 +87,12 @@ const InsightsSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="bg-primary/20 p-2 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="font-medium">Nutrition and activity correlation</p>
+                <p className="font-medium text-white">Nutrition and activity correlation</p>
               </motion.div>
             </div>
             
@@ -101,7 +101,7 @@ const InsightsSection = () => {
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              <Button>Learn More</Button>
+              <Button className="bg-primary hover:bg-primary-600 text-white">Learn More</Button>
             </motion.div>
           </div>
           
@@ -114,7 +114,7 @@ const InsightsSection = () => {
             <img 
               src="https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=600&h=400&q=80" 
               alt="Health insights and analytics" 
-              className="w-full rounded-xl shadow-lg"
+              className="w-full rounded-xl shadow-lg border border-white/10"
             />
           </motion.div>
         </div>

@@ -33,18 +33,18 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#2563EB', // Blue color used throughout the design
+					DEFAULT: '#ea384c', // Red accent from the images
 					foreground: '#FFFFFF',
-					50: '#EFF6FF',
-					100: '#DBEAFE',
-					200: '#BFDBFE',
-					300: '#93C5FD',
-					400: '#60A5FA',
-					500: '#3B82F6',
-					600: '#2563EB',
-					700: '#1D4ED8',
-					800: '#1E40AF',
-					900: '#1E3A8A',
+					50: '#ffeaed',
+					100: '#ffccd0',
+					200: '#ff9fa6',
+					300: '#ff6d79',
+					400: '#ff3a4c',
+					500: '#ea384c',
+					600: '#d62e43',
+					700: '#b02335',
+					800: '#8c1a29',
+					900: '#68111e',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -104,7 +104,7 @@ export default {
 				'float': 'float 6s ease-in-out infinite',
 			},
 			boxShadow: {
-				'feature': '0 10px 25px -3px rgba(0, 0, 0, 0.05)',
+				'feature': '0 10px 25px -3px rgba(0, 0, 0, 0.25)',
 			},
 		}
 	},

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="section pt-10 md:pt-20">
+    <section className="section pt-10 md:pt-20 bg-background">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center">
           <motion.div 
@@ -20,18 +20,18 @@ const HeroSection = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 0.3 }}
             >
-              SMART WORKOUT COMPANION
+              ENERGIZE YOUR GAME
             </motion.span>
             <motion.h1 
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-4xl md:text-5xl font-bold mb-6 text-white"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Track And Analyze Your Activity
+              Reward Your Stats, Elevate Your Life!
             </motion.h1>
             <motion.p 
-              className="text-gray-600 mb-8 text-lg"
+              className="text-gray-300 mb-8 text-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -44,8 +44,8 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              <Button className="px-8 py-6">Get Started</Button>
-              <Button variant="outline" className="px-8 py-6">Learn More</Button>
+              <Button className="px-8 py-6 bg-primary hover:bg-primary-600 text-white">Get Started</Button>
+              <Button variant="outline" className="px-8 py-6 border-primary text-primary hover:bg-primary/10">Learn More</Button>
             </motion.div>
           </motion.div>
           
