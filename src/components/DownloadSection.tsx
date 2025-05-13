@@ -39,7 +39,7 @@ const DownloadSection = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <img
-                  src="public/lovable-uploads/app-store-soon.png"
+                  src="/lovable-uploads/app-store-soon.png"
                   alt="App Store"
                   className="h-10 w-30"
                 />
@@ -50,7 +50,7 @@ const DownloadSection = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <img
-                  src="public/lovable-uploads/play-store-soon.png"
+                  src="/lovable-uploads/play-store-soon.png"
                   alt="App Store"
                   className="h-10 w-30"
                 />
@@ -71,7 +71,7 @@ const DownloadSection = () => {
               style={{ display: "flex", justifyContent: "center" }}
             >
               <motion.img
-                src="public/lovable-uploads/attivo-logo-new.jpg"
+                src="/lovable-uploads/attivo-logo-new.jpg"
                 alt="Sportivo App on mobile phone"
                 className="w-1/2 rounded-xl transform shadow-2xl border border-white/10"
                 whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
