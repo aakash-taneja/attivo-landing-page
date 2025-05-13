@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const tips = [
   {
@@ -26,19 +27,47 @@ const tips = [
 ];
 
 const TipsSection = () => {
+  const { ref, isInView } = useScrollAnimation();
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.1 * i,
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    })
+  };
+
   return (
-    <section className="section">
+    <section className="section" ref={ref}>
       <div className="container">
-        <div className="text-center mb-12">
+        <motion.div 
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Find Some Tips</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Discover expert advice to improve your workouts, nutrition, and overall fitness journey.
           </p>
-        </div>
+        </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {tips.map((tip, index) => (
-            <div key={index} className="rounded-xl overflow-hidden shadow-lg group">
+            <motion.div 
+              key={index} 
+              className="rounded-xl overflow-hidden shadow-lg group"
+              custom={index}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+              variants={cardVariants}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+            >
               <div className="relative overflow-hidden">
                 <img 
                   src={tip.image} 
@@ -56,7 +85,7 @@ const TipsSection = () => {
                   </svg>
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

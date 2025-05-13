@@ -1,12 +1,18 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
-    <nav className="py-4 px-6 md:px-10 flex items-center justify-between">
+    <motion.nav 
+      className="py-4 px-6 md:px-10 flex items-center justify-between"
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <div className="flex items-center">
         <a href="#" className="text-2xl font-bold text-primary">Attivo</a>
       </div>
@@ -41,7 +47,12 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 right-0 left-0 bg-white shadow-lg z-50 py-5 px-6">
+        <motion.div 
+          className="md:hidden absolute top-16 right-0 left-0 bg-white shadow-lg z-50 py-5 px-6"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           <div className="flex flex-col space-y-4">
             <a href="#features" className="font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href="#activities" className="font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Activities</a>
@@ -50,9 +61,9 @@ const Navbar = () => {
             <a href="#faq" className="font-medium hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>FAQ</a>
             <Button className="w-full" onClick={() => setIsMenuOpen(false)}>Get Started</Button>
           </div>
-        </div>
+        </motion.div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 
