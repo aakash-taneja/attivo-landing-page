@@ -1,38 +1,37 @@
-
-import React from 'react';
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const PerformanceSection = () => {
   const { ref, isInView } = useScrollAnimation();
-  
+
   const listItemVariants = {
     hidden: { opacity: 0, x: -20 },
-    visible: (i) => ({ 
-      opacity: 1, 
-      x: 0, 
-      transition: { delay: 0.3 + i * 0.1, duration: 0.5 } 
-    })
+    visible: (i) => ({
+      opacity: 1,
+      x: 0,
+      transition: { delay: 0.3 + i * 0.1, duration: 0.5 },
+    }),
   };
 
   return (
-    <section id="performance" className="section" ref={ref}>
+    <section id="performance" className="section bg-background" ref={ref}>
       <div className="container">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <motion.div 
+          <motion.div
             className="md:w-1/2"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.7 }}
           >
-            <img 
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&h=400&q=80" 
-              alt="Performance charts" 
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&h=400&q=80"
+              alt="Performance charts"
               className="w-full rounded-xl shadow-lg"
             />
           </motion.div>
-          
+
           <div className="md:w-1/2">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -40,10 +39,12 @@ const PerformanceSection = () => {
               transition={{ duration: 0.5 }}
               className="mb-4"
             >
-              <span className="text-primary font-semibold">PERFORMANCE METRICS</span>
+              <span className="text-primary font-semibold">
+                PERFORMANCE METRICS
+              </span>
             </motion.div>
-            
-            <motion.h2 
+
+            <motion.h2
               className="text-3xl md:text-4xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -51,19 +52,20 @@ const PerformanceSection = () => {
             >
               Measure Your Performance
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               className="text-gray-600 mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Track key performance indicators to understand your fitness progress. 
-              Our detailed analytics help you identify strengths and areas for improvement.
+              Track key performance indicators to understand your fitness
+              progress. Our detailed analytics help you identify strengths and
+              areas for improvement.
             </motion.p>
-            
+
             <div className="mb-8">
-              <motion.div 
+              <motion.div
                 className="flex items-center gap-4 mb-4"
                 custom={0}
                 initial="hidden"
@@ -71,14 +73,27 @@ const PerformanceSection = () => {
                 variants={listItemVariants}
               >
                 <div className="bg-primary-100 p-2 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-primary-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
-                <p className="font-medium">Personalized performance indicators</p>
+                <p className="font-medium">
+                  Personalized performance indicators
+                </p>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 className="flex items-center gap-4 mb-4"
                 custom={1}
                 initial="hidden"
@@ -86,14 +101,27 @@ const PerformanceSection = () => {
                 variants={listItemVariants}
               >
                 <div className="bg-primary-100 p-2 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-primary-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
-                <p className="font-medium">Weekly and monthly progress reports</p>
+                <p className="font-medium">
+                  Weekly and monthly progress reports
+                </p>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 className="flex items-center gap-4"
                 custom={2}
                 initial="hidden"
@@ -101,18 +129,32 @@ const PerformanceSection = () => {
                 variants={listItemVariants}
               >
                 <div className="bg-primary-100 p-2 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-primary-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
-                <p className="font-medium">Compare performance with previous periods</p>
+                <p className="font-medium">
+                  Compare performance with previous periods
+                </p>
               </motion.div>
             </div>
-            
+
             <motion.div
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
+              style={{ display: "flex", justifyContent: "flex-start" }}
             >
               <Button>View Demo</Button>
             </motion.div>
