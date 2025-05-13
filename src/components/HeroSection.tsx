@@ -67,7 +67,7 @@ const HeroSection = () => {
             <div className="gradient-blur bottom-1/4 right-0"></div>
             <img
               src="/lovable-uploads/hero-image.png"
-              alt="Sportivo App Screenshot"
+              alt="Attivo App Screenshot"
               className="w-full max-w-sm mx-auto animate-float"
             />
           </motion.div>

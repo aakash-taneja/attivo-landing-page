@@ -1,73 +1,48 @@
-# Welcome to your Lovable project
+# Attivo - Reward Your Stats, Elevate Your Life!
 
-## Project info
+Attivo is a Web3-powered sport social protocol that transforms your real-world sports and fitness activities into on-chain recognition and rewards. With Attivo, your movement isn’t just healthy — it’s valuable.
 
-**URL**: https://lovable.dev/projects/273f0166-3dbb-4817-aa65-64d57b205427
+## Features
 
-## How can I edit this code?
+- **Verifiable Activity Tracking**: Track your workouts, games, and training sessions — every step, every rep, every goal counts.
+- **Sport ID (Athlete Profile)**: Create a dynamic on-chain athletic identity. Earn Title NFTs, badges, and reputation by being active.
+- **Social Platform for Athletes**: Post your progress, share highlight moments, engage with fellow movers, and receive support from fans.
+- **Daily Challenges & Streaks**: Stay consistent with AI-verified daily challenges and unlock exclusive rewards.
+- **Integration with Wearable Devices**: Connect with your favorite fitness devices and apps for seamless tracking.
 
-There are several ways of editing your application.
+## Sections
 
-**Use Lovable**
+- **Hero Section**: Introduces the platform and its benefits.
+- **Features Section**: Highlights the key features of Attivo.
+- **Track Record Section**: Displays performance insights and activity tracking.
+- **Optimize Activities Section**: Offers personalized recommendations to optimize workouts.
+- **Performance Section**: Showcases how Attivo transforms physical activity into a digital identity.
+- **Stats Section**: Displays key statistics about the platform.
+- **Tips Section**: Provides helpful fitness tips.
+- **Testimonials Section**: Shares user feedback and success stories.
+- **FAQ Section**: Answers common questions about the platform.
+- **Download Section**: Promotes the app availability on iOS and Android.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/273f0166-3dbb-4817-aa65-64d57b205427) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React, TypeScript, TailwindCSS
+- **Animations**: Framer Motion
+- **State Management**: React Query
+- **Routing**: React Router
+- **Build Tool**: Vite
+- **Web3 Integration**: On-chain activity tracking and rewards
 
-**Use your preferred IDE**
+## Scripts
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **npm run dev**: Starts the development server.
+- **npm run build**: Builds the project for production.
+- **npm run lint**: Lints the codebase using ESLint.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Contributing
 
-Follow these steps:
+We welcome contributions! Please follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/273f0166-3dbb-4817-aa65-64d57b205427) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Fork the repository.
+- Create a new branch for your feature or bugfix.
+- Commit your changes and push the branch.
+- Open a pull request.

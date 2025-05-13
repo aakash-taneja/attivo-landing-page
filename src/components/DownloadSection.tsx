@@ -72,7 +72,7 @@ const DownloadSection = () => {
             >
               <motion.img
                 src="/lovable-uploads/attivo-logo-new.jpg"
-                alt="Sportivo App on mobile phone"
+                alt="Attivo App on mobile phone"
                 className="w-1/2 rounded-xl transform shadow-2xl border border-white/10"
                 whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
               />

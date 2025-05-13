@@ -5,7 +5,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const testimonials = [
   {
     quote:
-      "With Sportivo, I've been able to track my daily activities and see real progress in my fitness journey. The insights are incredibly helpful!",
+      "With Attivo, I've been able to track my daily activities and see real progress in my fitness journey. The insights are incredibly helpful!",
     name: "Karen Smith",
     position: "Fitness Enthusiast",
     image:
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     quote:
-      "As a personal trainer, I recommend Sportivo to all my clients. The detailed analytics and progress tracking make it indispensable.",
+      "As a personal trainer, I recommend Attivo to all my clients. The detailed analytics and progress tracking make it indispensable.",
     name: "Michael Rogers",
     position: "Personal Trainer",
     image:
