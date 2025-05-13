@@ -90,6 +90,4 @@
   @apply absolute w-48 h-48 bg-primary-300/30 rounded-full blur-3xl -z-10;
 }
 
-.app-screenshot {
-  @apply rounded-xl shadow-lg;
-}
+

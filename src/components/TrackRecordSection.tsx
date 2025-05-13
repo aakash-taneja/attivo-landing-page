@@ -9,9 +9,9 @@ const TrackRecordSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <img 
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&h=400&q=80" 
+              src="lovable-uploads/trackandrecord.png" 
               alt="Activity tracking statistics" 
-              className="w-full rounded-xl shadow-lg"
+              className="w-full"
             />
           </div>
           

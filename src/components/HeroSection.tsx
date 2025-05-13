@@ -23,9 +23,9 @@ const HeroSection = () => {
             <div className="gradient-blur top-1/4 -left-20"></div>
             <div className="gradient-blur bottom-1/4 right-0"></div>
             <img 
-              src="/lovable-uploads/ce89efb9-9d55-4d34-a0d4-9ac40d3792ad.png" 
+              src="/lovable-uploads/hero-image.png" 
               alt="Sportivo App Screenshot" 
-              className="w-full max-w-sm mx-auto app-screenshot animate-float"
+              className="w-full max-w-sm mx-auto animate-float"
             />
           </div>
         </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="py-4 px-6 md:px-10 flex items-center justify-between">
       <div className="flex items-center">
-        <a href="#" className="text-2xl font-bold text-primary">Sportivo</a>
+        <a href="#" className="text-2xl font-bold text-primary">Attivo</a>
       </div>
       
       <div className="hidden md:flex space-x-8">

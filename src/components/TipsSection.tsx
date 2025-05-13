@@ -19,7 +19,7 @@ const tips = [
     title: "Maximize Your Gym Time"
   },
   {
-    image: "https://images.unsplash.com/photo-1490349708435-19d432984942?auto=format&fit=crop&w=600&h=400&q=80",
+    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=600&h=400&q=80",
     category: "Hiking",
     title: "Explore Nature: Hiking Tips for Beginners"
   }
