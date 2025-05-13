@@ -52,7 +52,7 @@
 }
 
 .feature-card {
-  @apply bg-secondary rounded-xl shadow-feature p-6 transition-all duration-300 hover:shadow-lg border border-gray-800;
+  @apply bg-secondary rounded-xl shadow-feature p-6 transition-all duration-300 hover:shadow-lg border border-gray-800 flex flex-col items-center justify-center;
 }
 
 .gradient-blur {

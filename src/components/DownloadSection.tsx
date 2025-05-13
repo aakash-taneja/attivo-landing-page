@@ -20,7 +20,7 @@ const DownloadSection = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Download Now
+              Available soon on iOS and Android
             </h2>
             <p className="text-primary-100 mb-6">
               Get started with Attivo today and take the first step towards a
@@ -29,7 +29,7 @@ const DownloadSection = () => {
             </p>
 
             <motion.div
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-4 justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -38,40 +38,22 @@ const DownloadSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button
-                  variant="secondary"
-                  className="gap-2 bg-black/30 text-white border border-white/20 hover:bg-black/50"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M17.5 12.5c0 .76-.32 1.45-.84 1.92l-5.08 4.24c-.38.32-.92.32-1.3 0l-5.08-4.24c-.52-.47-.84-1.16-.84-1.92V5.15c0-1.3 1.05-2.35 2.35-2.35h8.44c1.3 0 2.35 1.05 2.35 2.35v7.35z" />
-                  </svg>
-                  App Store
-                </Button>
+                <img
+                  src="public/lovable-uploads/app-store-soon.png"
+                  alt="App Store"
+                  className="h-10 w-30"
+                />
               </motion.div>
 
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button
-                  variant="secondary"
-                  className="gap-2 bg-black/30 text-white border border-white/20 hover:bg-black/50"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5.3 3.2v17.6l7.7-8.8L5.3 3.2zm8.3 4.4l2.9 1.7L8.6 12l7.9 2.7L13.6 16l-4.7-8.4z" />
-                  </svg>
-                  Google Play
-                </Button>
+                <img
+                  src="public/lovable-uploads/play-store-soon.png"
+                  alt="App Store"
+                  className="h-10 w-30"
+                />
               </motion.div>
             </motion.div>
           </motion.div>
