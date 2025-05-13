@@ -59,7 +59,7 @@ const OptimizeActivitiesSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -87,7 +87,7 @@ const OptimizeActivitiesSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -115,7 +115,7 @@ const OptimizeActivitiesSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"

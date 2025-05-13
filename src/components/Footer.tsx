@@ -13,8 +13,8 @@ const Footer = () => {
               Attivo
             </a>
             <p className="text-gray-400 mb-4">
-              Track, analyze, and optimize your fitness journey with our
-              comprehensive activity tracking platform.
+              The Sport Social Protocol for the Web3 Generation. Turn your
+              activity into identity. Your journey, your profile, your rewards.
             </p>
           </div>
 

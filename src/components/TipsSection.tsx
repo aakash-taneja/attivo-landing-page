@@ -46,7 +46,7 @@ const TipsSection = () => {
   };
 
   return (
-    <section className="section bg-secondary" ref={ref}>
+    <section className="section bg-background" ref={ref}>
       <div className="container">
         <motion.div
           className="text-center mb-12"

@@ -40,7 +40,7 @@ const PerformanceSection = () => {
               className="mb-4"
             >
               <span className="text-primary font-semibold">
-                PERFORMANCE METRICS
+                IRL to On-Chain
               </span>
             </motion.div>
 
@@ -50,7 +50,7 @@ const PerformanceSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Measure Your Performance
+              Own Your Movement. Build Your Identity.
             </motion.h2>
 
             <motion.p
@@ -59,9 +59,10 @@ const PerformanceSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Track key performance indicators to understand your fitness
-              progress. Our detailed analytics help you identify strengths and
-              areas for improvement.
+              Transforms your physical activity into a dynamic digital identity.
+              Whether you're playing pickup games, training solo, or sharing
+              highlight clips — every moment gets verified, recorded, and
+              rewarded on-chain.
             </motion.p>
 
             <div className="mb-8">
@@ -72,7 +73,7 @@ const PerformanceSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -88,9 +89,7 @@ const PerformanceSection = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-medium">
-                  Personalized performance indicators
-                </p>
+                <p className="font-medium">Create Your Sport ID</p>
               </motion.div>
 
               <motion.div
@@ -100,7 +99,7 @@ const PerformanceSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -116,9 +115,7 @@ const PerformanceSection = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-medium">
-                  Weekly and monthly progress reports
-                </p>
+                <p className="font-medium">Earn Title NFTs & Badges</p>
               </motion.div>
 
               <motion.div
@@ -128,7 +125,7 @@ const PerformanceSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -144,9 +141,7 @@ const PerformanceSection = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-medium">
-                  Compare performance with previous periods
-                </p>
+                <p className="font-medium">On-Chain Proof of Activity</p>
               </motion.div>
             </div>
 

@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -11,25 +10,25 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const faqs = [
   {
-    question: "What is Sportivo?",
-    answer: "Sportivo is a comprehensive fitness tracking application that helps users monitor their physical activities, set fitness goals, track progress, and gain valuable insights about their health and performance."
+    question: "What is Attivo?",
+    answer:
+      "A sport social protocol that lets you track activity, share content, and earn rewards — all while building a verifiable athlete profile.",
   },
   {
-    question: "How does Sportivo work?",
-    answer: "Sportivo uses advanced algorithms to track your activities through your smartphone or wearable device. It monitors metrics such as steps, distance, calories burned, and active minutes, then provides detailed analytics and personalized insights."
+    question: "How does Attivo reward users?",
+    answer:
+      "By converting real-world activity and social engagement into digital credentials and on-chain rewards.",
   },
   {
-    question: "What are the key features of Sportivo?",
-    answer: "Key features include activity tracking, workout analytics, goal setting, progress charts, integration with wearable devices, personalized recommendations, nutrition tracking, and social community features."
+    question: "Do I need crypto to start?",
+    answer:
+      "No. You can sign up and start tracking with your regular login — Web3 features unlock as you grow.",
   },
   {
-    question: "Can Sportivo Track Indoor Activities?",
-    answer: "Yes, Sportivo can track various indoor activities including treadmill running, stationary cycling, indoor swimming, weightlifting, yoga, and more through manual logging or automatic detection with compatible devices."
+    question: "Is Attivo available for all devices?",
+    answer:
+      "Attivo is available for iOS and Android smartphones. It also integrates with popular wearable fitness devices and smartwatches for enhanced tracking capabilities.",
   },
-  {
-    question: "Is Sportivo available for all devices?",
-    answer: "Sportivo is available for iOS and Android smartphones. It also integrates with popular wearable fitness devices and smartwatches for enhanced tracking capabilities."
-  }
 ];
 
 const FaqSection = () => {
@@ -38,29 +37,36 @@ const FaqSection = () => {
   return (
     <section id="faq" className="section bg-background" ref={ref}>
       <div className="container">
-        <motion.div 
+        <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Frequently Asked Questions
+          </h2>
         </motion.div>
-        
+
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
                 transition={{ duration: 0.5, delay: 0.1 * index }}
               >
-                <AccordionItem value={`item-${index}`} className="border-gray-800">
+                <AccordionItem
+                  value={`item-${index}`}
+                  className="border-gray-800"
+                >
                   <AccordionTrigger className="text-left text-lg font-semibold text-white">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-300">
+                  <AccordionContent className="text-gray-300 text-left">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="section bg-background" ref={ref}>
+    <section className="section bg-secondary" ref={ref}>
       <div className="container">
         <motion.div
           className="text-center mb-12"
@@ -51,14 +51,14 @@ const TestimonialsSection = () => {
 
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="bg-white rounded-xl shadow-lg p-8"
+            className="bg-background rounded-xl shadow-lg p-8"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="relative">
               <motion.blockquote
-                className="text-xl text-gray-700 text-center mb-6"
+                className="text-xl text-gray-200 text-center mb-6"
                 key={activeIndex}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -80,10 +80,10 @@ const TestimonialsSection = () => {
                   className="w-16 h-16 rounded-full object-cover border-4 border-primary-100"
                 />
                 <div className="ml-4">
-                  <p className="font-bold text-black">
+                  <p className="font-bold text-white">
                     {testimonials[activeIndex].name}
                   </p>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-300 text-sm">
                     {testimonials[activeIndex].position}
                   </p>
                 </div>

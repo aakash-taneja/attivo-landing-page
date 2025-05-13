@@ -5,32 +5,32 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const features = [
   {
-    icon: "🔥",
+    icon: "🏃",
     iconBg: "bg-red-900/30",
-    title: "Activity Tracking",
+    title: "Verifiable Activity Tracking",
     description:
-      "Track your daily step count, distance, calories, and activity duration.",
+      "Track your workouts, games, and training sessions — every step, every rep, every goal counts.",
   },
   {
-    icon: "⚡",
+    icon: "📱",
     iconBg: "bg-blue-900/30",
-    title: "Instant Analytics",
+    title: "Sport ID (Athlete Profile)",
     description:
-      "Get real-time data analysis of your workout with detailed statistics.",
+      "Create a dynamic on-chain athletic identity. Earn Title NFTs, badges, and reputation by being active.",
   },
   {
-    icon: "🔄",
+    icon: "🤝",
     iconBg: "bg-green-900/30",
-    title: "Daily Goal Tracker",
+    title: "Social Platform for Athletes",
     description:
-      "Set daily goals and track your progress towards achieving them.",
+      "Post your progress, share highlight moments, engage with fellow movers, and receive support from fans.",
   },
   {
-    icon: "📊",
+    icon: "🎖",
     iconBg: "bg-orange-900/30",
-    title: "Progress Charts",
+    title: "Daily Challenges & Streaks",
     description:
-      "Visualize your progress over time with beautiful interactive charts.",
+      "Stay consistent with AI-verified daily challenges and unlock exclusive rewards for sticking with your grind.",
   },
 ];
 
@@ -41,18 +41,19 @@ const FeaturesSection = () => {
     <section id="features" className="section bg-secondary">
       <div className="container">
         <motion.div
-          className="mb-16"
+          className="mb-16 flex flex-col items-center text-center"
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Best Features We Offer For You
+            Built for Movers, Creators, and Champions
           </h2>
-          <p className="text-gray-300 ">
-            Discover the powerful features that make Sportivo the best choice
-            for tracking and analyzing your fitness journey.
+          <p className="text-gray-300 max-w-3xl">
+            Attivo is more than a fitness tracker. It’s your sport social
+            passport — combining movement data, content, and community in a
+            seamless Web3-powered platform.
           </p>
         </motion.div>
 

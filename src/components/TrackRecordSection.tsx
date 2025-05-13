@@ -50,7 +50,7 @@ const TrackRecordSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Track And Record Activity
+              Performance Insights that Matter
             </motion.h2>
 
             <motion.p
@@ -59,9 +59,8 @@ const TrackRecordSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Our advanced tracking algorithms ensure accurate measurement of
-              your activities. Get real-time updates on your progress and see
-              how you're performing against your goals.
+              Every movement is logged, verified, and transformed into
+              meaningful stats to help you grow.
             </motion.p>
 
             <div className="mb-8">
@@ -72,7 +71,7 @@ const TrackRecordSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -100,7 +99,7 @@ const TrackRecordSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -116,9 +115,7 @@ const TrackRecordSection = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-medium">
-                  Detailed metrics for every workout
-                </p>
+                <p className="font-medium">Weekly/monthly activity breakdown</p>
               </motion.div>
 
               <motion.div
@@ -128,7 +125,7 @@ const TrackRecordSection = () => {
                 animate={isInView ? "visible" : "hidden"}
                 variants={listItemVariants}
               >
-                <div className="bg-primary-100 p-2 rounded-full">
+                <div className="bg-primary/20 p-2 rounded-full">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-primary-600"
@@ -144,7 +141,7 @@ const TrackRecordSection = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-medium">Automatic activity detection</p>
+                <p className="font-medium">Personalized progress metrics</p>
               </motion.div>
             </div>
 

@@ -35,8 +35,9 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              Get detailed insights on your workouts, track your progress, and
-              optimize your fitness journey with our advanced analytics.
+              Turn your real-world sports and fitness activities into on-chain
+              recognition and rewards. With Attivo, your movement isn’t just
+              healthy — it’s valuable.
             </motion.p>
             <motion.div
               className="flex flex-wrap gap-4 justify-center"
