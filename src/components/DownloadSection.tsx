@@ -70,12 +70,6 @@ const DownloadSection = () => {
               className="relative"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              {/* <motion.img
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=400&h=600&q=80"
-                alt="Sportivo App on mobile phone"
-                className="mx-auto rounded-xl transform rotate-6 shadow-2xl border border-white/10"
-                // whileHover={{ rotate: 0, transition: { duration: 3 } }}
-              /> */}
               <motion.img
                 src="public/lovable-uploads/attivo-logo-new.jpg"
                 alt="Sportivo App on mobile phone"
