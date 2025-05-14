@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button className="bg-primary hover:bg-primary-600 text-white">
-            Get Started
+            Join Waitlist
           </Button>
         </div>
 
@@ -144,7 +144,7 @@ const Navbar = () => {
                 className="w-full bg-primary hover:bg-primary-600 text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get Started
+                Join Waitlist
               </Button>
             </div>
           </motion.div>

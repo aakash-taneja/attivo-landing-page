@@ -46,7 +46,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <Button className="px-8 py-6 bg-primary hover:bg-primary-600 text-white">
-                Get Started
+                Join Waitlist
               </Button>
               <Button
                 variant="outline"
